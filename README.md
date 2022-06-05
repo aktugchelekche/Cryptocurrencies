@@ -3,20 +3,20 @@ Unsupervised Machine Learning.
 
 ## Overview of the Analysis
 
-The purpose of this project is to perform Unsupervised Machine Learning models to discover any groupings, trends, or other information that could help us pitch cryptocurrencies to investors. A report that includes trending cryptocurrencies in the market as well as a classtification plots will be provided at the end of the analysis. 
+The purpose of this project is to perform Unsupervised Machine Learning models to discover any groupings, trends, or other information that could help us pitch cryptocurrencies to investors. A report that includes trending cryptocurrencies in the market as well as a classification plots will be provided at the end of the analysis. 
 
 
 ## Analysis
 
 ### Preprocessing the Data for PCA
 
-The dataset will be preprocessed by follwing steps in order to perform PCA : 
+The dataset will be preprocessed by following steps in order to perform PCA : 
 
 * Keep all the cryptocurrencies that are being traded.
 * Drop the IsTrading column.
 * Remove rows that have at least one null value.
 * Filter the crypto_df DataFrame so it only has rows where coins have been mined.
-* Create a new DataFrame that holds only the cryptocurrency names, and use the crypto_df DataFrame index as the index for this new DataFrame.
+* Create a new DataFrame that holds only the cryptocurrency names and use the crypto_df DataFrame index as the index for this new DataFrame.
 * Remove the CoinName column from the crypto_df DataFrame since it's not going to be used on the clustering algorithm.
 * Use the get_dummies() method to create variables for the two text features, Algorithm and ProofType, and store the resulting data in a new DataFrame named X.
 * Use the StandardScaler fit_transform() function to standardize the features from the X DataFrame.
@@ -53,7 +53,7 @@ After using <code> k=4 </code> for <code>K-Means model</code>,a new data frame w
 
 #### 3D-Scatter with Clusters
 
-This 3D-Scatter in <code>Figure-5</code> plot help us to see how classes was populated and distrubuted within 3 Principal Components. 
+This 3D-Scatter in <code>Figure-5</code> plot help us to see how classes was populated and distributed within 3 Principal Components. 
 
 <p align="center"><img width="565" alt="Screen Shot 2022-06-05 at 3 18 21 PM" src="https://user-images.githubusercontent.com/98676400/172068963-fd08adb8-93f3-4a24-8b6e-de7a0a521249.png"></p>
 <p align="center">Figure-5</p>
@@ -70,13 +70,12 @@ The table in <code> Figure-6</code> contains coins that currently tradable which
 
 #### Scatter Plot for Tradable cryptocurrencies.
 
-Finally, the plot in <code>Figure-7</code> is demostrading the distrubution of each cluster in 2D. 
+Finally, the plot in <code>Figure-7</code> is demonstrating the distribution of each cluster in 2D. 
 
 <p align="center"><img width="651" alt="Screen Shot 2022-06-05 at 3 34 10 PM" src="https://user-images.githubusercontent.com/98676400/172069509-9d3c1d1a-f082-476a-845e-a9ae301db317.png"></p>
 <p align="center">Figure-7</p>
 
-In conclution, a ML algorithm can help us to have an idea whether there is similarities among different cryptocurrencies and  they show similar behoviors in the market. Thus, we can provide with visuals to help investors to make better decision on this trending market. 
-
+In conclusion, a ML algorithm can help us to understand  whether there is similarities among different cryptocurrencies and  if show similar behaviors in the market. Thus, we can provide with visuals to help investors to make better decision on this trending market. 
 
 
 
