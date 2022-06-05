@@ -24,15 +24,23 @@ The dataset will be preprocessed by follwing steps in order to perform PCA :
 After completing Data Processing and Transforming steps above, an array of standardize the features will be as in <code>Figure-1</code>
 
 
-<p align="center">><img width="560" alt="Screen Shot 2022-06-05 at 2 47 39 PM" src="https://user-images.githubusercontent.com/98676400/172067883-0b47461d-8f78-49ba-8de6-154fac172359.png"></p>
-<p align="center">Figure -1 </p>
+<p align="center"><img width="560" alt="Screen Shot 2022-06-05 at 2 47 39 PM" src="https://user-images.githubusercontent.com/98676400/172067883-0b47461d-8f78-49ba-8de6-154fac172359.png"></p>
+<p align="center">Figure-1</p>
 
 ### Reducing Data Dimensions Using PCA
 
+PCA algorithm was applied to array in <code> Figure 1 </code> with three principal components then converted to a dataframe as in <code>Figure-2 </code>
+
+<p align="center"><img width="300" alt="Screen Shot 2022-06-05 at 2 53 14 PM" src="https://user-images.githubusercontent.com/98676400/172068083-7f636305-d0a8-4263-879c-99fcea7c019d.png"></p>
+<p align="center">Figure-2</p>
 
 
+### Clustering Cryptocurrencies Using K-means
 
-<img width="316" alt="Screen Shot 2022-06-05 at 2 53 14 PM" src="https://user-images.githubusercontent.com/98676400/172068083-7f636305-d0a8-4263-879c-99fcea7c019d.png">
+In this part, by utilizing <code> Elbow Curve </code> we find out how many clusters will be best fit for this data set that is the value of <code> K-Means</code>. The sharp turn at <code> k=4 </code> in <code> Figure-3</code> indicates that <strong> 4 </strong> will be the number of clusters that our algorithm will use. 
+
+<p align="center"><img width="697" alt="Screen Shot 2022-06-05 at 3 05 11 PM" src="https://user-images.githubusercontent.com/98676400/172068530-a01e53ae-477d-48fa-80d9-b08c0f43c255.png"></p>
+<p align="center">Figure-3</p>
 
 
 
